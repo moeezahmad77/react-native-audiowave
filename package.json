@@ -1,5 +1,5 @@
 {
-  "name": "@audiowave/react-native-audiowave",
+  "name": "react-native-audiowave",
   "version": "0.1.0",
   "description": "React Native audio waveform component with built-in playback controls, seek functionality, and real-time visualization. Supports both local and remote audio files.",
   "main": "./lib/module/index.js",
