@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-audiowave": ["./src/index"]
+      "@audiowave/react-native-audiowave": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
