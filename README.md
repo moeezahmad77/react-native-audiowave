@@ -9,7 +9,6 @@ A high-performance React Native audio waveform component with built-in playback 
 - 📱 **Cross-platform Support** - Works seamlessly on both iOS and Android
 - ⚡ **Turbo Native Module** - High-performance native implementation
 - 🎨 **Customizable UI** - Flexible styling and theming options
-- 🔍 **Seek Functionality** - Interactive timeline navigation
 - 📊 **Audio Asset Resolution** - Support for both local and remote audio files
 
 ## Screenshots
@@ -187,7 +186,6 @@ This library is built with **Turbo Native Modules**, providing:
 ### Common Issues
 
 1. **Audio not playing on iOS**
-   - Ensure microphone permissions are granted
    - Check that audio files are in supported formats (MP3, WAV, M4A)
 
 2. **Waveform not rendering**
@@ -199,16 +197,16 @@ This library is built with **Turbo Native Modules**, providing:
    - Clean build folder: `cd ios && rm -rf build && cd ..`
    - Reinstall pods: `cd ios && pod install && cd ..`
 
-### Debug Mode
+<!-- ### Debug Mode
 
 Enable debug logging by setting the environment variable:
 ```bash
 export RN_AUDIOWAVE_DEBUG=true
-```
+``` -->
 
-## Contributing
+<!-- ## Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details. -->
 
 ## License
 
@@ -217,8 +215,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Support
 
 - 📧 Email: moeez.ahmad.dev127@gmail.com
-- 🐛 Issues: [GitHub Issues](https://github.com/moeezahmad77/react-native-audiowave.git/issues)
-- 📖 Documentation: [GitHub Wiki](https://github.com/moeezahmad77/react-native-audiowave.git/wiki)
+- 🐛 Issues: [GitHub Issues](https://github.com/moeezahmad77/react-native-audiowave/issues)
+- 📖 Documentation: [GitHub Wiki](https://github.com/moeezahmad77/react-native-audiowave/wiki)
 
 ---
 
