@@ -86,10 +86,9 @@ const App = () => {
   return (
     <View style={styles.container}>
       <AudioWaveform
-        audioUrl={audioUrl}
+        audioUri={audioUrl}
         style={styles.waveform}
-        onPlaybackStateChange={(state) => console.log('Playback:', state)}
-        onSeek={(position) => console.log('Seek to:', position)}
+        onPlayStateChange={(state) => console.log('Playback:', state)}
       />
     </View>
   );
@@ -113,31 +112,12 @@ const styles = StyleSheet.create({
 
 ```tsx
 <AudioWaveform
-  audioUrl="https://example.com/audio.mp3"
+  audioUri="https://example.com/audio.mp3"
   style={styles.waveform}
   waveformColor="#007AFF"
   backgroundColor="#FFFFFF"
   progressColor="#34C759"
-  cursorColor="#FF3B30"
-  showPlayButton={true}
-  showSeekBar={true}
-  autoPlay={false}
-  onPlaybackStateChange={(state) => {
-    switch (state) {
-      case 'playing':
-        console.log('Audio is playing');
-        break;
-      case 'paused':
-        console.log('Audio is paused');
-        break;
-      case 'stopped':
-        console.log('Audio is stopped');
-        break;
-    }
-  }}
-  onSeek={(position) => {
-    console.log(`Seeked to ${position} seconds`);
-  }}
+  onPlayStateChange={(state) => console.log('Playback:', state)}
   onError={(error) => {
     console.error('Audio error:', error);
   }}
@@ -150,26 +130,14 @@ const styles = StyleSheet.create({
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `audioUrl` | `string` | **Required** | URL or path to the audio file |
+| `audioUri` | `string` | **Required** | URL or path to the audio file |
 | `style` | `ViewStyle` | `{}` | Custom styling for the waveform container |
 | `waveformColor` | `string` | `#007AFF` | Color of the waveform bars |
 | `backgroundColor` | `string` | `#FFFFFF` | Background color of the waveform |
 | `progressColor` | `string` | `#34C759` | Color of the playback progress |
-| `cursorColor` | `string` | `#FF3B30` | Color of the seek cursor |
-| `showPlayButton` | `boolean` | `true` | Whether to show the play/pause button |
-| `showSeekBar` | `boolean` | `true` | Whether to show the seek bar |
-| `autoPlay` | `boolean` | `false` | Whether to start playing automatically |
-| `onPlaybackStateChange` | `function` | - | Callback when playback state changes |
-| `onSeek` | `function` | - | Callback when seeking occurs |
+| `onPlayStateChange` | `function` | - | Callback when playback state changes |
+| `onPositionChange` | `function` | - | Callback when position changes |
 | `onError` | `function` | - | Callback when audio errors occur |
-
-### Playback States
-
-- `'playing'` - Audio is currently playing
-- `'paused'` - Audio is paused
-- `'stopped'` - Audio is stopped
-- `'loading'` - Audio is loading
-- `'error'` - An error occurred
 
 ## Performance
 
