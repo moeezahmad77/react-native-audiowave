@@ -33,9 +33,9 @@ A high-performance React Native audio waveform component with built-in playback 
 ### Install the package
 
 ```bash
-yarn add react-native-audiowave
+yarn add @moeez12/react-native-audiowave
 # or
-npm install react-native-audiowave
+npm install @moeez12/react-native-audiowave
 ```
 
 ### iOS Setup
@@ -79,7 +79,7 @@ No additional configuration required for Android.
 ```tsx
 import React, { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
-import AudioWaveform from 'react-native-audiowave';
+import AudioWaveform from '@moeez12/react-native-audiowave';
 
 const App = () => {
   const [audioUrl, setAudioUrl] = useState('path/to/your/audio.mp3');
